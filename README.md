@@ -1,7 +1,7 @@
-# DREAM block for Pose-Robust Face Recognition
-This is our implementation for our CVPR 2018 accepted paper *Pose-Robust Face Recognition via Deep Residual Equivariant Mapping* [paper on arxiv](https://arxiv.org/abs/1803.00839).
-
-The code is wriiten by [Yu Rong](https://github.com/penincillin) and [Kaidi Cao](https://github.com/CarlyleCao)
+# DREAM block Implementation for Pose-Aware Face Recognition
+Face recognition achieves exceptional success thanks to
+the emergence of deep learning. However, many contemporary face recognition models still perform relatively poor in processing profile faces compared to frontal faces. A key reason is that the number of frontal and profile training faces are highly imbalanced - there are extensively more frontal training samples compared to profile ones. In addition, it is intrinsically hard to learn a deep representation that is geometrically invariant to large pose variations.The DREAM block consistently enhances the performance of profile face recognition for many strong deep networks.The DREAM block consistently enhances the performance of profile face recognition for many
+strong deep networks.It is simple to implement. Specifically, the DREAM block is implemented as a simple yet effective gated residual branch. It can be integrated into existing convolutional neural network (CNN) architectures through stitching the block to the base network. It does not alter the original dimensionality of the face representation and can be trained end-to-end with standard back-propagation.
 
 ## Prerequisites
 - Linux or macOS
